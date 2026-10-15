@@ -360,10 +360,19 @@ body.reading nav.solid{ -webkit-backdrop-filter:none; backdrop-filter:none; }
 .csheet .cfoot{ display:flex; justify-content:space-between; align-items:center; gap:10px 20px; flex-wrap:wrap; padding:18px 36px; border-top:1px solid var(--line); background:var(--cream); }
 .csheet .cfoot b{ font-size:15px; }
 .csheet-skin .cfoot b{ color:var(--greend); } .csheet-food .cfoot b{ color:#8a4a2f; }
+.csheet-food .chead{ background:#f1e9df; }
+.csheet-food .ceyebrow{ color:#6a665e; }
+.csheet-food .ctitle{ color:var(--ink); }
+.csheet-food .csub{ color:#45423b; font-size:16.5px; max-width:none; }
+.csheet .clist{ margin:0; padding-left:20px; font-size:15px; line-height:1.5; color:var(--ink2); }
+.csheet .clist li{ margin:0 0 4px; }
+.csheet-food .clabel.ig{ color:#b5503f; } .csheet-food .clabel.ig .ci{ background:#b5503f; }
+.csheet-food .ccol+.ccol{ border-left:1px solid var(--line); padding-left:28px; }
+.csheet-food .cfoot{ background:#e5efe8; } .csheet-food .cfoot b{ color:var(--green); }
 .csheet .cfoot .cf-r{ color:var(--muted); text-transform:uppercase; letter-spacing:.08em; font-size:11px; }
 @media(max-width:600px){
   .csheet .chead{ padding:26px 22px 22px; } .csheet .cbody{ padding:4px 22px 8px; } .csheet .cfoot{ padding:16px 22px; }
-  .csheet .ccols{ grid-template-columns:1fr; gap:16px; }
+  .csheet .ccols{ grid-template-columns:1fr; gap:16px; } .csheet-food .ccol+.ccol{ border-left:none; padding-left:0; }
   .csheet .csec{ padding:18px 0; }
 }
 
@@ -520,7 +529,6 @@ body.reading nav.solid{ -webkit-backdrop-filter:none; backdrop-filter:none; }
   </div>
   <div class="tag a" aria-hidden="true">$1</div>
   <div class="tag b" aria-hidden="true">$200</div>
-  <div class="molcap" aria-hidden="true">$1 has what<br>$200 skips.</div>
 </header>
 
 <!-- WHY I STARTED -->
@@ -658,32 +666,32 @@ body.reading nav.solid{ -webkit-backdrop-filter:none; backdrop-filter:none; }
     <div class="chead">
       <p class="ceyebrow">The Affordable Wellness Project &middot; Nutrition</p>
       <h3 class="ctitle serif">What to buy. What to ignore.</h3>
-      <p class="csub">Your body eats molecules, not price tags &mdash; and the ones that build a healthy body are among the cheapest things in the store.</p>
+      <p class="csub">You don&rsquo;t need expensive products to be healthy. Focus on nutrients, not price tags.</p>
     </div>
     <div class="cbody">
       <div class="csec">
         <h4 class="csectitle">Protein</h4>
         <div class="ccols">
-          <div class="ccol"><span class="clabel look"><span class="ci">&#10003;</span>Buy</span><p class="ctext">Eggs, milk, dried beans + rice, canned tuna or sardines, bulk whey.</p></div>
-          <div class="ccol"><span class="clabel ig"><span class="ci">&#10005;</span>Ignore</span><p class="ctext">&ldquo;Grass-fed,&rdquo; &ldquo;clean,&rdquo; designer protein powders &mdash; the same amino acids, marked up.</p></div>
+          <div class="ccol"><span class="clabel look"><span class="ci">&#10003;</span>Buy</span><ul class="clist"><li>Eggs</li><li>Milk</li><li>Dried beans + rice</li><li>Canned tuna or sardines</li><li>Bulk whey (plain)</li></ul></div>
+          <div class="ccol"><span class="clabel ig"><span class="ci">&#10005;</span>Ignore</span><ul class="clist"><li>&ldquo;Grass-fed&rdquo; or &ldquo;clean&rdquo; protein powders</li><li>Designer brands</li><li>Marked up versions of the same amino acids</li></ul></div>
         </div>
       </div>
       <div class="csec">
         <h4 class="csectitle">Vitamins &amp; minerals</h4>
         <div class="ccols">
-          <div class="ccol"><span class="clabel look"><span class="ci">&#10003;</span>Buy</span><p class="ctext">Frozen &amp; canned vegetables, fortified staples, oats, potatoes. Pair beans with vitamin C.</p></div>
-          <div class="ccol"><span class="clabel ig"><span class="ci">&#10005;</span>Ignore</span><p class="ctext">&ldquo;Superfoods,&rdquo; cold-pressed juices, and most supplements.</p></div>
+          <div class="ccol"><span class="clabel look"><span class="ci">&#10003;</span>Buy</span><ul class="clist"><li>Frozen or canned vegetables</li><li>Fortified staples (oats, cereal, etc.)</li><li>Potatoes</li><li>Pair beans with vitamin C (helps iron absorption)</li></ul></div>
+          <div class="ccol"><span class="clabel ig"><span class="ci">&#10005;</span>Ignore</span><ul class="clist"><li>&ldquo;Superfoods&rdquo;</li><li>Cold-pressed juices</li><li>Most supplements (usually not needed if you eat a balanced diet)</li></ul></div>
         </div>
       </div>
       <div class="csec">
         <h4 class="csectitle">Overall health</h4>
         <div class="ccols">
-          <div class="ccol"><span class="clabel look"><span class="ci">&#10003;</span>Buy</span><p class="ctext">Mostly whole, minimally-processed foods you&rsquo;ll actually cook.</p></div>
-          <div class="ccol"><span class="clabel ig"><span class="ci">&#10005;</span>Ignore</span><p class="ctext">&ldquo;Organic&rdquo; as a health claim; the price of fast-food convenience.</p></div>
+          <div class="ccol"><span class="clabel look"><span class="ci">&#10003;</span>Buy</span><ul class="clist"><li>Mostly whole, minimally-processed foods</li><li>Foods you&rsquo;ll actually cook and eat</li><li>Simple, affordable staples (grains, beans, veggies, etc.)</li></ul></div>
+          <div class="ccol"><span class="clabel ig"><span class="ci">&#10005;</span>Ignore</span><ul class="clist"><li>&ldquo;Organic&rdquo; as a health claim</li><li>Expensive fast-food convenience</li><li>Trendy diets or quick fixes</li></ul></div>
         </div>
       </div>
     </div>
-    <div class="cfoot"><b>You don&rsquo;t have to be rich to be healthy.</b><span class="cf-r">Buy nutrients, not stories</span></div>
+    <div class="cfoot"><b>You don&rsquo;t have to be rich to be healthy.</b></div>
   </div></div>
   </div>
 </section>

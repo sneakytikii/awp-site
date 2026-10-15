@@ -119,7 +119,7 @@ h2{ font-size:clamp(28px,4.2vw,44px); line-height:1.1; font-weight:700; letter-s
 .spfrow{ display:grid; grid-template-columns:70px 1fr 56px; align-items:center; gap:14px; margin-bottom:16px; }
 .spfrow .lab{ font-weight:700; color:var(--green); }
 .spftrack{ height:22px; background:var(--line); border-radius:11px; overflow:hidden; }
-.spffill{ height:100%; width:100%; background:linear-gradient(90deg,var(--green),var(--sage)); border-radius:11px; transform:scaleX(0); transform-origin:0 50%; transition:transform 1.3s cubic-bezier(.16,1,.3,1); }
+.spffill{ height:100%; width:100%; background:var(--green); border-radius:11px; transform:scaleX(0); transform-origin:0 50%; transition:transform 1.3s cubic-bezier(.16,1,.3,1); }
 .spfrow .pct{ font-variant-numeric:tabular-nums; font-weight:700; color:var(--ink); text-align:right; }
 .spfnote{ margin-top:8px; color:var(--muted); font-size:15px; }
 
@@ -388,7 +388,7 @@ body.reading nav.solid{ -webkit-backdrop-filter:none; backdrop-filter:none; }
 .wgrow .lab{ font-size:14px; font-weight:600; color:var(--muted); }
 .wgrow .pct{ font-size:15px; font-weight:700; color:var(--green); }
 .wgtrack{ height:22px; background:var(--line); border-radius:11px; overflow:hidden; box-shadow:inset 0 0 0 1px #a8a294; }
-.wgfill{ height:100%; width:100%; background:linear-gradient(90deg,var(--green),var(--sage)); border-radius:11px; transform:scaleX(0); transform-origin:0 50%; transition:transform 1.3s cubic-bezier(.16,1,.3,1); }
+.wgfill{ height:100%; width:100%; background:var(--green); border-radius:11px; transform:scaleX(0); transform-origin:0 50%; transition:transform 1.3s cubic-bezier(.16,1,.3,1); }
 .reveal.in .wgfill{ transform:scaleX(var(--w,1)); }
 .wgrow+.wgrow .wgfill{ transition-delay:.14s; }
 .paper .wnote{ margin-top:10px; font-size:14px; color:var(--muted); line-height:1.55; }
